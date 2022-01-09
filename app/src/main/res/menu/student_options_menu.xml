@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/student_dashboard"
+            android:title="Dashboard"
+            android:icon="@drawable/ic_dashboard"/>
+
+        <item
+            android:id="@+id/student_message"
+            android:title="Message"
+            android:icon="@drawable/ic_message"/>
+
+        <item
+            android:id="@+id/student_lectures"
+            android:title="Lectures"
+            android:icon="@drawable/ic_courses"/>
+
+        <item
+            android:id="@+id/student_note"
+            android:title="Note"
+            android:icon="@drawable/ic_note"/>
+
+        <item
+            android:id="@+id/student_bookmark"
+            android:title="Bookmark"
+            android:icon="@drawable/ic_bookmark"/>
+
+        <item
+            android:id="@+id/student_watch_admin_list"
+            android:title="Admins"
+            android:icon="@drawable/ic_admin"/>
+
+        <item
+            android:id="@+id/student_watch_teacher_list"
+            android:title="Teachers"
+            android:icon="@drawable/ic_list"/>
+
+        <item
+            android:id="@+id/roll_call"
+            android:title="Roll Call"
+            android:icon="@drawable/ic_watch_attendance"/>
+
+        <item
+            android:id="@+id/student_setting"
+            android:title="Setting"
+            android:icon="@drawable/ic_setting"/>
+
+        <item
+            android:id="@+id/student_logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_logout"/>
+    </group>
+</menu>

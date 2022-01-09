@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_miscellaneous"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:behavior_peekHeight="-1dp"
+    android:id="@+id/layout_loading_images">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:background="@drawable/bg_loading_images_indicator"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp" />
+
+    <LinearLayout
+        android:id="@+id/image_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/image_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_loading_images_indicator"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="Edit"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/ubuntu_regular"/>
+
+        <Button
+            android:id="@+id/image_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/bg_image_send"
+            android:text="Send"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/loading_images_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UserInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_back"
+            android:layout_margin="@dimen/_10sdp"
+            android:id="@+id/back"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/profile_logo"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/user_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Role" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_asset_2"
+            android:layout_below="@id/user_role"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:id="@+id/msg_fab"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_watch_attendance"
+            android:layout_below="@id/user_role"
+            android:layout_toEndOf="@id/msg_fab"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:id="@+id/att_fab"/>
+
+        <View
+            android:id="@+id/upper"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/user_role"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/ic_upper" />
+
+        <ImageView
+            android:id="@+id/info_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/upper"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="16sp"
+            android:src="@drawable/info" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upper"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_toEndOf="@id/info_logo"
+            android:orientation="vertical"
+            android:id="@+id/name_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:id="@+id/name"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/phone_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/info_logo"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_logo"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="20sp"
+            android:layout_toEndOf="@id/info_logo"
+            android:orientation="vertical"
+            android:id="@+id/mobile_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:id="@+id/mobile"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/email_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/phone_logo"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/ic_email" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_logo"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="20sp"
+            android:layout_toEndOf="@id/info_logo"
+            android:orientation="vertical"
+            android:id="@+id/email_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:id="@+id/email"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/address_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/email_logo"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/ic_address" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_logo"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="20sp"
+            android:layout_toEndOf="@id/info_logo"
+            android:orientation="vertical"
+            android:id="@+id/address_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Address"
+                android:id="@+id/address"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

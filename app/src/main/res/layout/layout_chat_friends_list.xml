@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/chats_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/ic_person"
+        app:civ_border_width="@dimen/_1sdp"/>
+
+    <View
+        android:id="@+id/online_icon"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:background="@drawable/bg_online_icon"
+        app:layout_constraintEnd_toEndOf="@id/user_profile"
+        app:layout_constraintBottom_toBottomOf="@id/user_profile"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/ubuntu_medium"
+        app:layout_constraintTop_toTopOf="@id/user_profile"
+        app:layout_constraintStart_toEndOf="@id/user_profile"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/last_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last message"
+        app:layout_constraintStart_toStartOf="@id/user_name"
+        app:layout_constraintTop_toBottomOf="@id/user_name"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

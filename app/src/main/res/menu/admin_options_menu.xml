@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/admin_dashboard"
+            android:title="Dashboard"
+            android:icon="@drawable/ic_dashboard"/>
+
+        <item
+            android:id="@+id/admin_message"
+            android:title="Message"
+            android:icon="@drawable/ic_message"/>
+
+        <item
+            android:id="@+id/admin_courses"
+            android:title="Courses"
+            android:icon="@drawable/ic_courses"/>
+
+        <item
+            android:id="@+id/admin_note"
+            android:title="Note"
+            android:icon="@drawable/ic_note"/>
+
+        <item
+            android:id="@+id/admin_bookmark"
+            android:title="Bookmark"
+            android:icon="@drawable/ic_bookmark"/>
+
+        <item android:title="Student">
+            <menu>
+                <item
+                    android:id="@+id/admin_st_list"
+                    android:title="Student list"/>
+
+                <item
+                    android:id="@+id/admin_st_registers"
+                    android:title="Register list"/>
+
+                <item
+                    android:id="@+id/admin_st_attendance"
+                    android:title="Attendance"/>
+            </menu>
+        </item>
+
+        <item android:title="Teacher">
+            <menu>
+                <item
+                    android:id="@+id/admin_te_list"
+                    android:title="Teacher list"/>
+
+                <item
+                    android:id="@+id/admin_te_registers"
+                    android:title="Register list"/>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/admin_setting"
+            android:title="Setting"
+            android:icon="@drawable/ic_setting"/>
+
+        <item
+            android:id="@+id/admin_logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_logout"/>
+    </group>
+</menu>

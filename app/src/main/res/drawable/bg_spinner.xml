@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#5F72D8"/>
+                    <padding android:bottom="2dp"/>
+                </shape>
+            </item>
+
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#fff"/>
+                </shape>
+            </item>
+
+            <item>
+                <rotate
+                    android:fromDegrees="90"
+                    android:pivotX="100%"
+                    android:pivotY="60%"
+                    android:toDegrees="135">
+                    <rotate
+                        android:fromDegrees="135"
+                        android:pivotX="100%"
+                        android:pivotY="60%"
+                        android:toDegrees="45">
+                        <shape android:shape="rectangle">
+                            <stroke
+                                android:width="10dp"
+                                android:color="#5F72D8"/>
+                            <solid android:color="#5F72D8"/>
+                        </shape>
+                    </rotate>
+                </rotate>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#00f"/>
+                    <padding android:bottom="2dp"/>
+                </shape>
+            </item>
+
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#BBDEFB"/>
+                </shape>
+            </item>
+
+            <item>
+                <rotate
+                    android:fromDegrees="90"
+                    android:pivotX="100%"
+                    android:pivotY="60%"
+                    android:toDegrees="135">
+                    <rotate
+                        android:fromDegrees="135"
+                        android:pivotX="100%"
+                        android:pivotY="60%"
+                        android:toDegrees="45">
+                        <shape android:shape="rectangle">
+                            <stroke
+                                android:width="10dp"
+                                android:color="#5F72D8"/>
+                            <solid android:color="#5F72D8"/>
+                        </shape>
+                    </rotate>
+                </rotate>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_enabled="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#ddf"/>
+                    <padding android:bottom="2dp"/>
+                </shape>
+            </item>
+
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#fff"/>
+                </shape>
+            </item>
+
+            <item>
+                <rotate
+                    android:fromDegrees="90"
+                    android:pivotX="100%"
+                    android:pivotY="60%"
+                    android:toDegrees="135">
+                    <rotate
+                        android:fromDegrees="135"
+                        android:pivotX="100%"
+                        android:pivotY="60%"
+                        android:toDegrees="45">
+                        <shape android:shape="rectangle">
+                            <stroke
+                                android:width="10dp"
+                                android:color="#ddf"/>
+                            <solid android:color="#ddf"/>
+                        </shape>
+                    </rotate>
+                </rotate>
+            </item>
+        </layer-list>
+    </item>
+</selector>

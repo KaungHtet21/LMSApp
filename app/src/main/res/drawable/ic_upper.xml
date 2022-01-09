@@ -1,0 +1,52 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="1080dp"
+    android:height="374.77dp"
+    android:viewportWidth="1080"
+    android:viewportHeight="374.77">
+  <path
+      android:pathData="M1080,65.86V293.39s-193.66,75.86 -404.33,36.94V259.88C794.21,232 928.86,172.16 1080,65.86Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startY="203.65"
+          android:startX="675.67"
+          android:endY="203.65"
+          android:endX="1080"
+          android:type="linear">
+        <item android:offset="0" android:color="#FF6C51B5"/>
+        <item android:offset="1" android:color="#FF3F51B5"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M1080,65.86V168.65s-72.66,89.83 -404.33,161.68V259.88C794.21,232 928.86,172.16 1080,65.86Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startY="198.09"
+          android:startX="675.67"
+          android:endY="198.09"
+          android:endX="1080"
+          android:type="linear">
+        <item android:offset="0" android:color="#FF6C27B5"/>
+        <item android:offset="1" android:color="#FF3F51B5"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M1080,65.86v74S933.71,262.22 675.67,330.33c-176.58,46.6 -405.49,67.79 -675.67,7V0S217.7,367.76 675.67,259.88C794.21,232 928.86,172.16 1080,65.86Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startY="187.39"
+          android:endY="187.39"
+          android:startX="0"
+          android:endX="1080"
+          android:type="linear">
+        <item android:offset="0" android:color="#FF3F51B5"/>
+        <item android:offset="1" android:color="#FF3F89B5"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M1080,65.86C935.15,177.12 799.12,241.37 675.67,274.47 269.85,383.32 0,155.68 0,155.68V0S217.7,367.76 675.67,259.88C794.21,232 928.86,172.16 1080,65.86Z">
+  </path>
+</vector>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/receiver_profile"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/msg_receiver_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/_250sdp"
+        android:inputType="textMultiLine"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:padding="@dimen/_10sdp"
+        android:text="Receiver msg"
+        app:layout_constraintTop_toTopOf="@id/receiver_profile"
+        app:layout_constraintStart_toEndOf="@id/receiver_profile"
+        android:background="@drawable/bg_msg_receiver_layout"
+        tools:ignore="TextViewEdits" />
+
+    <TextView
+        android:id="@+id/msg_receiver_text_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="Date and Time"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@id/msg_receiver_input"
+        app:layout_constraintTop_toBottomOf="@id/msg_receiver_input"/>
+
+    <ImageView
+        android:id="@+id/msg_receiver_image_view"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_250sdp"
+        app:layout_constraintTop_toTopOf="@id/receiver_profile"
+        app:layout_constraintStart_toEndOf="@id/receiver_profile"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/bg_search"/>
+
+    <TextView
+        android:id="@+id/msg_receiver_image_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="Date and Time"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@id/msg_receiver_image_view"
+        app:layout_constraintTop_toTopOf="@id/msg_receiver_image_view"
+        app:layout_constraintBottom_toBottomOf="@id/msg_receiver_image_view"/>
+
+    <TextView
+        android:id="@+id/msg_sender_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/_250sdp"
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/ubuntu_regular"
+        android:padding="@dimen/_10sdp"
+        android:text="Sender msg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/bg_msg_sender_layout"
+        android:textColor="@color/white"
+        tools:ignore="TextViewEdits" />
+
+    <TextView
+        android:id="@+id/msg_sender_text_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="Date and Time"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="@id/msg_sender_input"
+        app:layout_constraintTop_toBottomOf="@id/msg_sender_input"
+        android:layout_marginEnd="@dimen/_5sdp"/>
+
+    <ImageView
+        android:id="@+id/msg_sender_image_view"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/bg_search"/>
+
+    <TextView
+        android:id="@+id/msg_sender_image_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="Date and Time"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        app:layout_constraintEnd_toStartOf="@id/msg_sender_image_view"
+        app:layout_constraintTop_toTopOf="@id/msg_sender_image_view"
+        app:layout_constraintBottom_toBottomOf="@id/msg_sender_image_view"
+        android:layout_marginEnd="@dimen/_5sdp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
